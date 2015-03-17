@@ -51,7 +51,7 @@ function insert(JSON, callback(err, data));
 ```
 
 ###Retrieve - Find
-Função que irá listar os objetos buscados pela query no primeiro parâmetro..
+Função que irá listar os objetos buscados pela query no primeiro parâmetro.
 
 ```js
 function insert(JSON, callback(err, data));
@@ -59,15 +59,15 @@ function insert(JSON, callback(err, data));
 ```
 
 ###Update - Update
-Função que irá inserir um objeto passado como parâmetro.
+Função que irá alterar um objeto buscado via query no primeiro parâmetro e no segundo parâmetro passa-se o objeto com os valores a serem alterados.
 
 ```js
-function insert(JSON, callback(err, data));
+function insert(JSON, JSON, callback(err, data));
 // JSON é o objeto a ser inserido
 ```
 
 ###Delete - Remove
-Função que irá inserir um objeto passado como parâmetro.
+Função que irá deletar um objeto buscado via query como parâmetro.
 
 ```js
 function insert(JSON, callback(err, data));

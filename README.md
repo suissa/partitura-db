@@ -10,7 +10,7 @@ Para isso vamos definir inicialmente qual será nossa API básica que todos os b
 , "create": "insert"
 , "retrieve": "find"
 , "get": "findOne"
-, "save": "update"
+, "update": "update"
 , "delete": "remove"
 }
 
@@ -30,10 +30,43 @@ Partitura
   .remove(JSON, callback(err,data))
 ```
 
-##API
+##API - CRUD
+
+###Callbacks
+
+Para usar o padrão do Node.js todo o *callback* deve aceitar 2 parâmetros:
+
+- err: objeto retornado ao ERRO
+- data: objeto retornado ao SUCESSO
+
+Caso o *callback* seja de **sucesso** deve-se retornar `null` como primeiro parâmetro.
 
 ###Create - Insert
 
+Função que irá inserir um objeto passado como parâmetro.
+
+```js
+function insert(JSON, callback(err, data));
+// JSON é o objeto a ser inserido
+```
+
+###Retrieve - Find
+Função que irá listar os objetos buscados pela query no primeiro parâmetro..
+
+```js
+function insert(JSON, callback(err, data));
+// JSON é o objeto a ser inserido
+```
+
+###Update - Update
+Função que irá inserir um objeto passado como parâmetro.
+
+```js
+function insert(JSON, callback(err, data));
+// JSON é o objeto a ser inserido
+```
+
+###Delete - Remove
 Função que irá inserir um objeto passado como parâmetro.
 
 ```js
